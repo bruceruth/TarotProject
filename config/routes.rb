@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'page/home'
+  resources :appointments
+  root 'page#home'
 
   get 'page/testimonials'
 
